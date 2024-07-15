@@ -1,0 +1,45 @@
+D:\Anaconda\envs\dejahu\python.exe C:\Users\xiao\Desktop\dejahu\vegetables_tf2.3-master\test_model.py
+Found 13211 files belonging to 104 classes.
+2024-07-13 14:49:06.636492: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-07-13 14:49:06.642022: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x20c5231ad80 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2024-07-13 14:49:06.642137: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+Found 3225 files belonging to 104 classes.
+202/202 [==============================] - 27s 131ms/step - loss: 1.4744 - accuracy: 0.7786
+Mobilenet test accuracy : 0.7786046266555786
+[[  4.   0.   0. ...   0.   0.   0.]
+ [  0.  27.   0. ...   0.   0.   0.]
+ [  0.   0.  29. ...   0.   0.   0.]
+ ...
+ [  0.   0.   0. ... 163.   5.   0.]
+ [  0.   0.   0. ...   4.  49.   0.]
+ [  0.   0.   0. ...   0.   0.  55.]]
+
+[[1.         0.         0.         ... 0.         0.         0.        ]
+ [0.         0.9        0.         ... 0.         0.         0.        ]
+ [0.         0.         0.96666667 ... 0.         0.         0.        ]
+ ...
+ [0.         0.         0.         ... 0.85340314 0.02617801 0.        ]
+ [0.         0.         0.         ... 0.06060606 0.74242424 0.        ]
+ [0.         0.         0.         ... 0.         0.         0.94827586]]
+Found 13211 files belonging to 104 classes.
+Found 3225 files belonging to 104 classes.
+202/202 [==============================] - 13s 63ms/step - loss: 6.5063 - accuracy: 0.3188
+CNN test accuracy : 0.3187596797943115
+[[ 1.  0.  0. ...  0.  0.  0.]
+ [ 0. 10.  0. ...  0.  0.  0.]
+ [ 0.  0.  4. ...  4.  0.  0.]
+ ...
+ [ 0.  0.  1. ... 80.  4.  1.]
+ [ 0.  0.  1. ... 10. 18.  0.]
+ [ 0.  0.  1. ...  4.  1. 25.]]
+
+[[0.25       0.         0.         ... 0.         0.         0.        ]
+ [0.         0.33333333 0.         ... 0.         0.         0.        ]
+ [0.         0.         0.13333333 ... 0.13333333 0.         0.        ]
+ ...
+ [0.         0.         0.0052356  ... 0.41884817 0.02094241 0.0052356 ]
+ [0.         0.         0.01515152 ... 0.15151515 0.27272727 0.        ]
+ [0.         0.         0.01724138 ... 0.06896552 0.01724138 0.43103448]]
+
+进程已结束，退出代码为 0
