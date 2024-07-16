@@ -54,7 +54,7 @@ struct WelcomePage {
     Column({space:10}) {
       //   中央
       Row(){
-        Image($r('app.media.app_icon')).width(260)
+        Image($r('app.media.xrk')).width(260)
       }
       .layoutWeight(1)
       //设置布局权重

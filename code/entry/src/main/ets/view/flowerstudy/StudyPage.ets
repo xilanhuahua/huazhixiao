@@ -1,4 +1,6 @@
 import SearchHeader from './SearchHead'
+import FlowerRecognitionHome from './StudyList'
+import StudyList from './StudyList'
 @Component
 export default struct study {
   build() {
@@ -6,15 +8,12 @@ export default struct study {
       SearchHeader()
 
       // 头部搜索栏
-      Text('头部搜索栏')
 
       // 统计卡片
-      Text('统计卡片')
 
       // 记录列表
+      FlowerRecognitionHome()
 
-
-      Text('记录列表')
     }
     .width('100%')
     .height('100%')
