@@ -1,18 +1,19 @@
 import { CommonConstants } from '../common/constants/CommonConstants'
+import recognize from '../view/flowerRecognize/recognizePage'
 import SearchHeader from '../view/flowerstudy/SearchHead'
 import study from '../view/flowerstudy/StudyPage'
 @Entry
 @Component
 struct Index{
   @State cindex:number =0
-  @Builder TabBarBuilder(titie:ResourceStr,image:ResourceStr,index){
+  @Builder TabBarBuilder(title:ResourceStr,image:ResourceStr,index){
     Column({space:CommonConstants.SPACE_8}){
       Image(image)
         .width(22)
         .fillColor(
           this.selectColor(index)
         )
-      Text(titie)
+      Text(title)
         .fontSize(12)
         .fontColor(
           this.selectColor(index)
@@ -20,6 +21,7 @@ struct Index{
     }
   }
   selectColor(index:number){
+    console.log(index+'')
     return  this.cindex ===index ? $r('app.color.primary_color'):$r('app.color.gray')
   }
   build(){
@@ -30,7 +32,7 @@ struct Index{
       .tabBar(this.TabBarBuilder('花卉知识学习',$r('app.media.xx'),0))
 
       TabContent(){
-        Text('花卉识别')
+        recognize()
       }
       .tabBar(this.TabBarBuilder('花卉识别叶敏',$r('app.media.flower'),1))
 

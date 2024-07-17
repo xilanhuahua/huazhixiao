@@ -5,9 +5,8 @@ import StudyList from './StudyList'
 export default struct study {
   build() {
     Column(){
-      SearchHeader()
-
       // 头部搜索栏
+      SearchHeader()
 
       // 统计卡片
 
