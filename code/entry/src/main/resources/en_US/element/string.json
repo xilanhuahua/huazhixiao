@@ -16,5 +16,11 @@
       "name": "app_name",
       "value": "花h知z晓x"
     }
-  ]
+  ,{
+      "name": "StudyFlower_desc",
+      "value": "description"
+    },{
+      "name": "StudyFlower_label",
+      "value": "label"
+    }]
 }

@@ -1,11 +1,13 @@
 import SearchHeader from './SearchHead'
 import FlowerRecognitionHome from './StudyList'
 import StudyList from './StudyList'
+import router from '@ohos.router'
 @Component
 export default struct study {
   build() {
     Column(){
       SearchHeader()
+
 
       // 头部搜索栏
 

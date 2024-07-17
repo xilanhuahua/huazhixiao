@@ -32,7 +32,7 @@ struct Index{
       TabContent(){
         Text('花卉识别')
       }
-      .tabBar(this.TabBarBuilder('花卉识别叶敏',$r('app.media.flower'),1))
+      .tabBar(this.TabBarBuilder('花卉识别',$r('app.media.flower'),1))
 
 
     }

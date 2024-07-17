@@ -37,6 +37,14 @@
           }
         ]
       }
-    ]
+    ,{
+        "name": "StudyFlower",
+        "srcEntry": "./ets/pages/StudyFlower.ets",
+        "description": "$string:StudyFlower_desc",
+        "icon": "$media:icon",
+        "label": "$string:StudyFlower_label",
+        "startWindowIcon" : "$media:icon",
+        "startWindowBackground" : "$color:start_window_background"
+      }]
   }
 }
