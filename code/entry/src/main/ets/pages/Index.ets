@@ -34,7 +34,7 @@ struct Index{
       TabContent(){
         recognize()
       }
-      .tabBar(this.TabBarBuilder('花卉识别叶敏',$r('app.media.flower'),1))
+      .tabBar(this.TabBarBuilder('花卉识别',$r('app.media.flower'),1))
 
 
     }

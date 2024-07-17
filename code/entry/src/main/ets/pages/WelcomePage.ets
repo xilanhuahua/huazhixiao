@@ -77,6 +77,8 @@ struct WelcomePage {
     }
     .width('100%')
     .height('100%')
-    .backgroundColor('#ff9fd274')
+    .backgroundColor('#ffc0ea9b')
+
+
   }
 }
