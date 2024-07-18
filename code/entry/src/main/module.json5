@@ -21,7 +21,7 @@
         "name": "EntryAbility",
         "srcEntry": "./ets/entryability/EntryAbility.ts",
         "description": "$string:EntryAbility_desc",
-        "icon": "$media:app_icon",
+        "icon": "$media:tb",
         "label": "$string:EntryAbility_label",
         "startWindowIcon": "$media:xrk",
         "startWindowBackground": "$color:start_window_background",
@@ -41,9 +41,9 @@
         "name": "StudyFlower",
         "srcEntry": "./ets/pages/StudyFlower.ets",
         "description": "$string:StudyFlower_desc",
-        "icon": "$media:icon",
+        "icon": "$media:tb",
         "label": "$string:StudyFlower_label",
-        "startWindowIcon" : "$media:icon",
+        "startWindowIcon" : "$media:tb",
         "startWindowBackground" : "$color:start_window_background"
       }]
   }

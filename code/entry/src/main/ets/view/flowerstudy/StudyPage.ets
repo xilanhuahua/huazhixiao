@@ -6,12 +6,9 @@ import router from '@ohos.router'
 export default struct study {
   build() {
     Column(){
-<<<<<<< HEAD
-=======
-      SearchHeader()
 
 
->>>>>>> 6808c385a0d89b0d83a9ce1fb2f95b749745498d
+
       // 头部搜索栏
       SearchHeader()
 

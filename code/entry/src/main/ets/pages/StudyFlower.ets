@@ -50,7 +50,7 @@ struct StudyFlower {
         //   .lineHeight(1.5)
         //   .padding({ left: 10, right: 10 });
         Text(this.text)
-        Text(this.text)
+        Text(this.flowerDescription)
           // .flexGrow(1)
         // 你可以添加更多关于花卉的详细信息
       }

@@ -58,12 +58,7 @@ struct WelcomePage {
       }
       .layoutWeight(1)
       //设置布局权重
-
-
       //   logo
-
-
-
       //文字描述
       Row(){
         Text('花知晓')
@@ -77,7 +72,7 @@ struct WelcomePage {
     }
     .width('100%')
     .height('100%')
-    .backgroundColor('#ffc0ea9b')
+    .backgroundColor('#fee3ea')
 
 
   }
