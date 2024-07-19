@@ -1,12 +1,17 @@
 from flask import Flask, request, jsonify
+import os
+os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 import tensorflow as tf
+TF_ENABLE_ONEDNN_OPTS = 0
 import numpy as np
 import cv2
 from PIL import Image
-import os
+
 from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
+
+
 
 # 加载模型
 model = tf.keras.models.load_model("models/mobilenet_flower.h5")

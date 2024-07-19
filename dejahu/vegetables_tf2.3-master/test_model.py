@@ -37,8 +37,8 @@ def data_load(data_dir, test_data_dir, img_height, img_width, batch_size):
 # 测试mobilenet准确率
 def test_mobilenet():
     # todo 加载数据, 修改为你自己的数据集的路径
-    train_ds, test_ds, class_names = data_load("C:/Users/xiao/Desktop/dejahu/new_data/train",
-                                              "C:/Users/xiao/Desktop/dejahu/new_data/val", 224, 224, 16)
+    train_ds, test_ds, class_names = data_load("C:/Users/Administrator/Desktop/huawei_project/huazhixiao/dejahu/new_data/train",
+                                              "C:/Users/Administrator/Desktop/huawei_project/huazhixiao/dejahu/new_data/val", 224, 224, 16)
     # todo 加载模型，修改为你的模型名称
     model = tf.keras.models.load_model("models/mobilenet_flower.h5")
     # model.summary()
@@ -87,8 +87,8 @@ def test_mobilenet():
 # 测试cnn模型准确率
 def test_cnn():
     # todo 加载数据, 修改为你自己的数据集的路径
-    train_ds, test_ds, class_names = data_load("C:/Users/xiao/Desktop/dejahu/new_data/train",
-                                              "C:/Users/xiao/Desktop/dejahu/new_data/val", 224, 224, 16)
+    train_ds, test_ds, class_names = data_load("C:/Users/Administrator/Desktop/huawei_project/huazhixiao/dejahu/new_data/train",
+                                              "C:/Users/Administrator/Desktop/huawei_project/huazhixiao/dejahu/new_data/val", 224, 224, 16)
     # todo 加载模型，修改为你的模型名称
     model = tf.keras.models.load_model("models/cnn_flowers.h5")
     # model.summary()

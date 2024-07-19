@@ -9,8 +9,23 @@ export default  struct requireImage {
    // imgUrl:Promise<void> = ''
   build() {
     Row() {
-      Column() {
-        Text('择图片'+this.mediaBean.localUrl)
+      Flex({direction:FlexDirection.Column,justifyContent:FlexAlign.SpaceAround,alignItems:ItemAlign.Center}) {
+        // 花卉识别
+        Text("花卉识别")
+          .backgroundColor(("#efefef"))
+          .width("100%")
+          .height(40)
+          .margin({top:-10})
+          .fontColor(Color.Black)
+          .textAlign(TextAlign.Center)
+
+        Image(this.mediaBean.localUrl)
+          .width(300)
+          .height(300)
+          .backgroundColor(Color.Grey)
+
+
+        Text('选择图片'+this.mediaBean.localUrl)
           .textAlign(TextAlign.Center)
           .width(200)
           .fontSize(16)
@@ -75,10 +90,7 @@ export default  struct requireImage {
         //   .fontSize(16)
         //   .margin(10)
 
-        Image(this.mediaBean.localUrl)
-          .width(300)
-          .height(300)
-          .backgroundColor(Color.Grey)
+
       }
       .width('100%')
       .height('100%')

@@ -13,6 +13,7 @@ from shutil import copy2
 def data_set_split(src_data_folder, target_data_folder, train_scale=0.8, val_scale=0.2, test_scale=0.0):
     '''
     读取源数据文件夹，生成划分好的文件夹，分为trian、val、test三个文件夹进行
+    读取源数据文件夹，生成划分好的文件夹，分为trian、val、test三个文件夹进行
     :param src_data_folder: 源文件夹 E:/biye/gogogo/note_book/torch_note/data/utils_test/data_split/src_data
     :param target_data_folder: 目标文件夹 E:/biye/gogogo/note_book/torch_note/data/utils_test/data_split/target_data
     :param train_scale: 训练集比例
