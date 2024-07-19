@@ -3,6 +3,7 @@
     "pages/Index",
     "pages/WelcomePage",
     "pages/StudyFlower",
-    "pages/User"
+    "pages/User",
+    "pages/historyRecognize"
   ]
 }

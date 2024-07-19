@@ -1,5 +1,6 @@
 
 import common from '@ohos.app.ability.common';
+import router from '@ohos.router';
 import { MediaBean } from '../../bean/MediaBean';
 import { MediaHelper } from '../../helper/MediaHelper';
 @Component
@@ -15,14 +16,15 @@ export default  struct requireImage {
           .backgroundColor(("#efefef"))
           .width("100%")
           .height(40)
-          .margin({top:-10})
+          .margin({top:-20})
           .fontColor(Color.Black)
           .textAlign(TextAlign.Center)
 
-        Image(this.mediaBean.localUrl)
+        Image(this.mediaBean.localUrl||$r('app.media.flower1'))
           .width(300)
           .height(300)
-          .backgroundColor(Color.Grey)
+          .backgroundColor(Color.White)
+          .fillColor(Color.Pink)
 
 
         Text('选择图片'+this.mediaBean.localUrl)
@@ -35,18 +37,20 @@ export default  struct requireImage {
           .onClick(() => {
             console.log(`${this.mediaBean.localUrl ? this.mediaBean.localUrl : ''}哈哈哈哈哈`)
             this.handleClick(MediaOption.Picture)
+
           })
 
-        Text('选择文件')
-          .textAlign(TextAlign.Center)
-          .width(200)
-          .fontSize(16)
-          .padding(10)
-          .margin(20)
-          .border({ width: 0.5, color: '#ff38f84b', radius: 15 })
-          .onClick(() => {
-            this.handleClick(MediaOption.File)
-          })
+
+        // Text('选择文件')
+        //   .textAlign(TextAlign.Center)
+        //   .width(200)
+        //   .fontSize(16)
+        //   .padding(10)
+        //   .margin(20)
+        //   .border({ width: 0.5, color: '#ff38f84b', radius: 15 })
+        //   .onClick(() => {
+        //     this.handleClick(MediaOption.File)
+        //   })
 
         Text('拍照')
           .textAlign(TextAlign.Center)
@@ -57,6 +61,20 @@ export default  struct requireImage {
           .border({ width: 0.5, color: '#ff38f84b', radius: 15 })
           .onClick(() => {
             this.handleClick(MediaOption.TakePhoto)
+          })
+
+        Text('历史识别')
+          .textAlign(TextAlign.Center)
+          .width(200)
+          .fontSize(16)
+          .padding(10)
+          .margin(20)
+          .border({ width: 0.5, color: '#ff38f84b', radius: 15 })
+          .onClick(() => {
+            router.pushUrl({
+              url:'pages/historyRecognize'
+            })
+
           })
 
         Divider()
